@@ -34,11 +34,11 @@ public class DatabaseHandler {
                 user.setLogin(result.getString(1));
                 System.out.println("Логин: " + result.getString(1) + "\n");
                 user.setPassword(result.getString(2));
-                System.out.println("Пароль: " + result.getString(1) + "\n");
+                System.out.println("Пароль: " + result.getString(2) + "\n");
                 user.setDate(result.getString(3));
-                System.out.println("Дата: " + result.getString(1) + "\n");
+                System.out.println("Дата: " + result.getString(3) + "\n");
                 user.setEmail(result.getString(4));
-                System.out.println("Email: " + result.getString(1) + "\n");
+                System.out.println("Email: " + result.getString(4) + "\n");
             }
             stat.close();
             // Закрываем соединение с базой данных
