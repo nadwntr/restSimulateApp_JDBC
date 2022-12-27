@@ -3,7 +3,7 @@ package khovanets.restsimulateapp;
 import java.sql.*;
 
 public class DatabaseHandler {
-    private final String url = "jdbc:postgresql://localhost:5432/userdb";
+    private final String url = "jdbc:postgresql://0.0.0.0:5432/userdb";
     private final String username = "postgres";
     private final String password = "postgres";
 
