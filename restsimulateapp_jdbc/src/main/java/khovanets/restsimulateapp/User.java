@@ -5,6 +5,6 @@ import lombok.Data;
 public class User {
     private String login;
     private String password;
-    private String date;
     private String email;
+    private String date;
 }
