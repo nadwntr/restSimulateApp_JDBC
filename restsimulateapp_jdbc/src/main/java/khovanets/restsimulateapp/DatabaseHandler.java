@@ -49,8 +49,8 @@ public class DatabaseHandler {
             result.next();
             user = new User(result.getString(1), result.getString(2),
                     result.getString(3), result.getString(4));
-            // Выводим результат запроса
-            System.out.println(user);
+            // Выводим информацию о выполнении запроса
+            System.out.println("SELECT-запрос выполнен.");
 
             // Возвращаем данные пользователя по логину, если не было исключения
             return user;
@@ -100,7 +100,7 @@ public class DatabaseHandler {
 
             // Создаем пользователя с указанными параметрами + датой вставки в БД
             User user = new User(login, pass, email, timestamp.toString());
-
+            // Выводим информацию о выполнении запросов
             System.out.println("INSERT-запросы выполнены.");
             return user;
             // Ловим исключения
